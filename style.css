@@ -4,25 +4,25 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
-.eisenhower-matrix {
+.matrix {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.eisenhower-matrix__img {
+.matrix__img {
   width: 100%;
 }
-.eisenhower-matrix__link {
+.matrix__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .eisenhower-matrix {
+  .matrix {
     text-align: center;
   }
 }
-.centered-main-page-element {
+.wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -114,7 +114,7 @@ li > * {
 li > input[type="checkbox"] {
   margin: 0 10px;
 }
-li > label {
+.task__tasks {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;

@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="body">
-    <div class="eisenhower-matrix">
-      <img class="eisenhower-matrix__img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix picture">
-      <a class="eisenhower-matrix__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <div class="matrix">
+      <img class="matrix__img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix picture">
+      <a class="matrix__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
-    <div class="centered-main-page-element">
+    <div class="wrapper">
       <section class="tasks">
         <h3 class="tasks__title">Add Item</h3>
         <div class="tasks__wrapper">
@@ -22,8 +22,8 @@
       <section class="tasks">
         <h3 class="tasks__title">Todo</h3>
         <ul id="incomplete-tasks">
-          <li>
-            <input type="checkbox">
+          <li class="tasks__list">
+            <input class="tasks__input-checkbox" type="checkbox">
             <label class="tasks__task">Pay Bills</label>
             <input class="tasks__input-text" type="text">
             <button class="edit">Edit</button>
@@ -31,8 +31,8 @@
               <img src="./remove.svg" alt="remove icon">
             </button>
           </li>
-          <li class="editMode">
-            <input type="checkbox">
+          <li class="tasks__list editMode">
+            <input class="tasks__input-checkbox" type="checkbox">
             <label class="tasks__task">Go Shopping</label>
             <input class="tasks__input-text" type="text" value="Go Shopping">
             <button class="edit">Save</button>
@@ -45,9 +45,9 @@
       <section class="tasks">
         <h3 class="tasks__title">Completed</h3>
         <ul id="completed-tasks">
-          <li>
-            <input type="checkbox" checked>
-            <label class="tasks__task">See the Doctor</label>
+          <li class="tasks__list">
+            <input class="tasks__input-checkbox" type="checkbox" checked>
+            <label class="tasks__task tasks__task_completed">See the Doctor</label>
             <input class="tasks__input-text" type="text">
             <button class="edit">Edit</button>
             <button class="delete">
