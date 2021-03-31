@@ -82,6 +82,7 @@
   font-size: 18px;
   line-height: 18px;
   height: 21px;
+  width: 226px;
   padding: 0 9px;
   border: 1px solid #ddd;
   background: #fff;
@@ -98,9 +99,7 @@
   display: block;
   margin: 0 0 20px;
 }
-.tasks__input-text {
-  width: 226px;
-}
+
 .tasks__btn-add:hover {
   color: #0fc57c;
 }
@@ -134,9 +133,7 @@
 .tasks__input-text {
   width: 226px;
 }
-.tasks__input-text_wide {
-  width: 84%;
-}
+
 .tasks__btn-delete:hover {
   color: #cf2323;
 }
@@ -160,11 +157,16 @@
   display: none;
 }
 
-.tasks__list-item_edit-mode input[type=text] {
+.tasks__input-text_edit-mode {
   display: inline-block;
   width: 324px;
 }
 
-.tasks__list-item_edit-mode label {
+.tasks__task_edit-mode {
   display: none;
+}
+
+.tasks__input-text_wide {
+  display: block;
+  width: 84%;
 }
